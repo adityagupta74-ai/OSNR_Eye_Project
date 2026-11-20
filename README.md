@@ -19,6 +19,7 @@ A multi-task CNN that estimates optical signal-to-noise ratio (OSNR) and classif
 The full report, including the MLP, Random Forest and SVR baselines, is in [performance_report.md](performance_report.md).
 
 ## Contents
+- `OSNR_Estimation_from_Eye_Diagrams.ipynb`: the full pipeline (link simulation, dataset generation, EDA, CNN training, baselines and evaluation). Built to run on Google Colab (a T4 GPU is recommended; it also runs on CPU, more slowly).
 - `model/`: trained Keras model (`osnr_cnn_best.keras`) and weights (`osnr_cnn.weights.h5`)
 - `plots/`: EDA, training curves, confusion matrices, error analysis and model comparison
 - `metadata*.csv`: per-sample labels and splits
