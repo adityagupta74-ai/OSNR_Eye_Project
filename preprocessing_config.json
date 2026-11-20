@@ -1,0 +1,52 @@
+{
+  "preprocessing": {
+    "img_size": 128,
+    "color_mode": "grayscale",
+    "channels": 1,
+    "resize_interpolation": "bilinear",
+    "normalisation": "pixel / 255.0 (float32, range [0, 1])",
+    "background": "dark (0) background, bright traces; light-background images are inverted",
+    "eye_span_UI": 2.0,
+    "amplitude_window_normalised": [
+      -0.3,
+      3.4
+    ],
+    "amplitude_normalisation": "photocurrent divided by its mean (constant-power receiver)",
+    "intensity_mapping": "log(1 + hits) scaled to 0..255",
+    "osnr_mean_dB": 20.084211349487305,
+    "osnr_std_dB": 6.129588603973389
+  },
+  "simulation": {
+    "bit_rate": 10000000000.0,
+    "samples_per_bit": 32,
+    "n_bits": 1024,
+    "wavelength": 1.55e-06,
+    "osnr_ref_bw_nm": 0.1,
+    "extinction_ratio_db": 12.0,
+    "tx_bw_factor": 1.5,
+    "obpf_bw": 50000000000.0,
+    "obpf_order": 2,
+    "rx_bw_factor": 0.75,
+    "rx_bessel_order": 4,
+    "thermal_noise_rel": 0.0,
+    "img_size": 128,
+    "eye_ui": 2.0,
+    "eye_upsample": 8,
+    "y_min": -0.3,
+    "y_max": 3.4,
+    "guard_bits": 16
+  },
+  "osnr_reference_bandwidth_Hz": 12478354131.113424,
+  "held_out_combinations": [
+    "osnr12_cd0",
+    "osnr12_cd200",
+    "osnr12_cd400",
+    "osnr18_cd100",
+    "osnr19_cd100",
+    "osnr21_cd400",
+    "osnr24_cd200",
+    "osnr24_cd800",
+    "osnr25_cd0",
+    "osnr25_cd800"
+  ]
+}

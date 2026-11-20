@@ -1,0 +1,15 @@
+{
+  "classes": {
+    "0": "clean",
+    "1": "noise_impaired",
+    "2": "dispersion_impaired",
+    "3": "noise_and_dispersion"
+  },
+  "definitions": {
+    "clean": "OSNR >= 20.0 dB and |CD| < 500.0 ps/nm",
+    "noise_impaired": "OSNR < 20.0 dB and |CD| < 500.0 ps/nm",
+    "dispersion_impaired": "OSNR >= 20.0 dB and |CD| >= 500.0 ps/nm",
+    "noise_and_dispersion": "OSNR < 20.0 dB and |CD| >= 500.0 ps/nm"
+  },
+  "osnr_unit": "dB, 0.1 nm reference bandwidth (12.48 GHz at 1550 nm)"
+}
